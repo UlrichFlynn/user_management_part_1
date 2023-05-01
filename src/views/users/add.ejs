@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User management</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <%- include("../partials/header") -%>
+
+    <section>
+        <h2>Create User</h2>
+      <form action="/users/new" method="post" class="create-user-form">
+        <div class="row">
+            <div class="col-md-6 form-field">
+                <label for="">Nom</label>
+                <input type="text" name="name" class="form-control">
+            </div>
+            <div class="col-md-6 form-field">
+                <label for="">Email</label>
+                <input type="text" name="email" class="form-control">
+            </div>
+            <div class="col-md-6 form-field">
+                <label for="">Téléphone</label>
+                <input type="text" name="phone" class="form-control">
+            </div>
+            <div class="col-md-6 form-field">
+                <label for="">Adresse</label>
+                <input type="text" name="address" class="form-control">
+            </div>
+            <div class="col-md-6 form-field">
+                <label for="">Sexe</label>
+                <select name="gender" id="" class="form-control">
+                    <option value=""></option>
+                    <option value="male">Masculin</option>
+                    <option value="female">Feminin</option>
+                </select>
+            </div>
+            <div class="col-md-6 form-field">
+                <label for="">Poste</label>
+                <input type="text" name="post" class="form-control">
+            </div>
+            <div class="col-md-6 form-field">
+                <label for="">Mot de passe</label>
+                <input type="password" name="password" class="form-control">
+            </div>
+            <div class="col-md-6 form-field">
+                <label for="">Avatar</label>
+                <input type="file" name="avatar" class="form-control">
+            </div>
+            <div class="col-md-12 btn-save">
+                <button class="btn btn-primary" type="submit">Enreistrer</button>
+            </div>
+        </div>
+      </form>
+    </section>
+
+    <%- include("../partials/footer") -%>    
+
+  </body>
+</html>

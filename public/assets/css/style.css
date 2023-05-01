@@ -57,3 +57,26 @@
     background-color: white !important;
     color:rgb(78, 78, 238) !important;
 }
+
+.create-user-form {
+  margin-inline-start: 5rem;
+  margin-inline-end:5rem;
+  margin-block-start: 2rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.btn-save {
+  margin-block-start: 2rem !important;
+  text-align: center;
+}
+
+.btn-save button {
+  width: 70%;
+}
+
+.form-field {
+  margin-block-end: 1rem;
+}
